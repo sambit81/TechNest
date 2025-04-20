@@ -57,6 +57,9 @@ TechNest/
 ├── resources/
 │   ├── img/                       # Default profile images (copy to deployed path)
 │   └── blog_pics/                 # Sample blog images (copy to deployed path)
+├── db/
+│   ├── schema.sql                 # Table creation scripts
+│   └── seed_data.sql              # Initial sample data for the application
 ```
 
 ## 📖 Image Folder Setup (Important!)
@@ -76,6 +79,15 @@ To properly load profile pictures and blog post images, follow these steps after
 
 > Note: These folders are not committed to the repository to avoid tracking user uploads. You only need to do this once for initial setup.
 
+## 🛠️ Database Setup
+
+1. Start your MySQL server.
+2. Create a new database (e.g., `technest_db`).
+3. Execute the SQL scripts provided:
+   - `schema.sql`: contains table definitions
+   - `seed_data.sql`: inserts some sample initial data
+4. Update `ConnectionProvider.java` with your DB name, username, and password.
+
 ## 📚 How to Run
 
 1. Clone the repository:
@@ -85,7 +97,7 @@ git clone https://github.com/sambit81/TechNest.git
 ```
 
 2. Import into **Eclipse** or any Java IDE.
-3. Set up a **MySQL** database using the provided schema.
+3. Set up the **MySQL** database using the provided schema.
 4. Configure your DB connection in `ConnectionProvider.java`.
 5. Deploy using Apache Tomcat (v9 or above).
 6. Access the app at `http://localhost:8080/TechNest`
@@ -97,3 +109,4 @@ This project is open-source and free to use.
 ---
 
 > Built with ❤️ by [Sambit Sinha](https://github.com/sambit81)
+
