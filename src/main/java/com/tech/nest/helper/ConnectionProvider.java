@@ -12,7 +12,7 @@ public class ConnectionProvider {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				
 				//create a connection..
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/techblog", "root", "cKHs52#d");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/<your-database-name>", "<your-username>", "<your-password>");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
