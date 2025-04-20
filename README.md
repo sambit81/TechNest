@@ -88,6 +88,13 @@ To properly load profile pictures and blog post images, follow these steps after
    - `seed_data.sql`: inserts some sample initial data
 4. Update `ConnectionProvider.java` with your DB name, username, and password.
 
+## 📦 Dependencies
+
+- Java JDK 8 or above
+- Apache Tomcat (v9 or above)
+- MySQL Server
+- **MySQL Connector/J** version `mysql-connector-j-9.1.0.jar` added to your classpath or the `lib` folder of the project (required for JDBC connectivity)
+
 ## 📚 How to Run
 
 1. Clone the repository:
